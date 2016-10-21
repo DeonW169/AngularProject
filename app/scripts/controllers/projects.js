@@ -57,7 +57,7 @@ angular.module('myAppApp')
 
 		$scope.createNewProject = function () 
 		{
-			projectsService.createNewProject()
+			projectsService.createNewProject(this.selectedProject)
 			.then(function() 
 			{
 				$scope.getProjects();
